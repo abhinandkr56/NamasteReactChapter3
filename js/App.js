@@ -1,7 +1,8 @@
 "use strict";
+import React from "react";
+import ReactDOM from 'react-dom/client';
 
-function Greetings() {
-    return <h1>Hello readers, Thankyou for reading this blog !</h1>;
-  }
+const heading = React.createElement("h1", {}, "Heading 1 for parcel");
 
-ReactDOM.render(<Greetings/>, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
